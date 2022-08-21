@@ -5,7 +5,7 @@ let res = a + b;
 
 console.log('The sum of two numbers is:'+ res);
 
-console.log('=========================Operators ===================')
+console.log('=========================Basics ===================')
 
 /*
 lets explore the variables 
@@ -73,3 +73,26 @@ if (yourAge >= legalAgeOfDriving) {
 } else {
     console.log(`No, however I will be allowed in ${legalAgeOfDriving - yourAge} years `);
 }
+
+// Type conversion and type coercion 
+
+console.log('====================type conversion ======================')
+
+//string to number 
+let aNumber = "25"; 
+console.log(typeof aNumber, aNumber); 
+console.log(typeof Number(aNumber), Number(aNumber)); 
+
+
+console.log('====================type coercion ======================')
+console.log("1"+5);  // result is 15
+let n = "1"+ 5 ; 
+console.log(n - 1); //result is 14
+console.log("11"+"32"- 45);
+
+console.log("34"-"9");  //  res - 25 (implicit conversion to number)
+console.log("34"+"9"); // res - 349  (implecit conversion to string)
+
+// Java script performs the conversion based on the operaton is being used. it converts the other operand into suitable type 
+
+
