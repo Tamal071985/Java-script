@@ -92,7 +92,64 @@ console.log("11"+"32"- 45);
 
 console.log("34"-"9");  //  res - 25 (implicit conversion to number)
 console.log("34"+"9"); // res - 349  (implecit conversion to string)
-
 // Java script performs the conversion based on the operaton is being used. it converts the other operand into suitable type 
 
+// FALSY values 
+console.log('===============FALSY values============================');
+// FALSY values 
+// JS retuns false for 5 values (0, NaN, '', undefined, null) 
+// for other values JS always retuns true 
+let age= 0 ; 
+if(age) {
+    console.log('More than a year old'); 
+}else {
+    console.log('Still a baby');
+}
 
+let ageNew ; 
+
+if(ageNew) {
+    console.log('More than a year old'); 
+}else {
+    console.log('Still a baby');
+}
+
+console.log("===========comparison operators i.e '==' and '===' in java script==================")
+// comparison operator . there are two types of comparison operator in JS 
+// normal comparison i.e == and strict comparison i.e ===
+
+ age = "37" // age is string 
+//example 1
+if (age == 37) console.log('You are 37 years old');
+
+//same example with different result 
+if (age === 37) {
+    console.log('You are 37 years old');
+} else console.log('You are not 37 years old'); 
+//The result is different because strict comparison returns false when type mismatches even both the values are same
+
+// correct comparison should be 
+if (Number(age) === 37) {
+    console.log('You are 37 years old');
+} else console.log('You are not 37 years old'); 
+
+//conclusion :- we always should use === for comparison 
+//function - understanding of function 
+
+function printHelloWorld() {
+    console.log('Hello World'); 
+}
+
+printHelloWorld();
+
+//function which is returning value
+
+function getSum(num1, num2) {
+    return num1 + num2;
+}
+
+let sum = getSum(10, 15); 
+console.log('Result of 10 + 15 is '+ sum); 
+
+sum = getSum(25, 26); 
+console.log('Result of 25 + 26 is '+sum);
